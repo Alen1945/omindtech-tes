@@ -1,0 +1,383 @@
+$widthDrawer: 250px;
+.appBar {
+  box-shadow: 0 2px 4px 0 rgba(228, 228, 228, 0.8) !important;
+  &.open {
+    padding-left: $widthDrawer;
+  }
+  .toolbar {
+    box-shadow: 0 2px 4px 0 rgba(228, 228, 228, 0.8);
+    height: 80px;
+    box-shadow: unset;
+    .drawerButton {
+      font-size: 30px;
+      color: #fbc932;
+    }
+  }
+}
+.containerMain {
+  margin-top: 50px;
+  &.open {
+    padding-left: $widthDrawer + 24px;
+  }
+  .header {
+    margin-bottom: 60px;
+    .activeBreadCrumb {
+      font-weight: bold;
+      margin-right: 20px;
+      font-size: 25px;
+    }
+    .breadCrumb {
+      .breadLink {
+        color: #444;
+        font-size: 15px;
+      }
+    }
+  }
+  .containerCard {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    .cardHeader {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      .containerImageIcon {
+        background-color: #2dabff;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        color: #666;
+        display: inline-block;
+      }
+      .subTitle {
+        color: #2dabff;
+        font-size: 14px;
+      }
+    }
+  }
+  .wrapperPublicSpeaking {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .titleSection {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .subTitle {
+      display: inline-block;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 12px;
+      padding: 2px 5px;
+      background-color: red;
+      margin-bottom: 15px;
+    }
+    .detail {
+      font-size: 15px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    .detailProgress {
+      margin-bottom: 3px;
+      .title {
+        color: #777;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .value {
+        font-size: 15px;
+        font-weight: bold;
+        color: #777;
+      }
+    }
+    .boxProgress {
+      border-radius: 5px;
+      width: 100%;
+      height: 10px;
+      background-color: #2dabff;
+    }
+  }
+  .cardMateri {
+    .itemlistMateri {
+      margin-bottom: 20px;
+
+      .headerItem {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 5px;
+        border-bottom: 0.8px solid #eee;
+        .headerTitle {
+          font-weight: bold;
+          font-size: 18px;
+          color: #666;
+        }
+        .removeIcon {
+          color: #fbc932;
+          font-size: 16px;
+        }
+      }
+      .detailItem {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1.34px solid #ddd;
+        .titleItem {
+          font-size: 14px;
+          color: #666;
+        }
+        .itemType {
+          font-size: 11px;
+          color: #666;
+        }
+        .checkBoxMateri {
+          color: #fbc932;
+        }
+      }
+    }
+  }
+  .cardQuiz {
+    margin-bottom: 15px;
+    .detailQuiz {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 0.8px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      .title {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 5px;
+      }
+      .subTitle {
+        font-size: 13px;
+        color: #777;
+        margin-bottom: 15px;
+      }
+      .answer {
+        color: #777;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:first-child {
+          padding-left: 0px;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        .anwserCorrect {
+          font-weight: bold;
+          font-size: 17px;
+        }
+        .answerWrong {
+          font-weight: bold;
+          color: red;
+          font-size: 17px;
+        }
+        .value {
+          font-weight: bold;
+          color: #2dabff;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .containerExam {
+    margin-bottom: 15px;
+    .examHeader {
+      border-bottom: unset;
+    }
+    .information {
+      font-size: 15px;
+      .informationRed {
+        color: red;
+      }
+    }
+  }
+  .cardMetting {
+    .cardHeader {
+      margin-bottom: 20px;
+    }
+    .buttonJadwal {
+      background-color: #fbc932;
+      color: #fff;
+      font-weight: bold;
+      height: 30px;
+    }
+    .cardContent {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 0.8px solid #eee;
+      padding-left: 20px;
+      padding-right: 20px;
+      .detailContent {
+        border-left: 3px solid #777;
+        padding-left: 10px;
+        .time {
+          color: #888;
+        }
+        .title {
+          font-weight: bold;
+          color: #777;
+        }
+        .date {
+          font-size: 14px;
+          color: #777;
+        }
+        .location {
+          font-size: 14px;
+          color: #777;
+        }
+        &.last {
+          border-left: 3px solid #00ba42;
+        }
+      }
+      .checkBoxContent {
+        color: #fbc932;
+      }
+    }
+  }
+  .cardReminder {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .title {
+      color: #777;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .cardContent {
+      border-left: 5px solid #00ba42;
+      padding-left: 10px;
+      .time {
+        padding: 5px;
+        background-color: red;
+        border-radius: 2px;
+        color: #fff;
+        font-weight: bold;
+      }
+      .title {
+        margin-bottom: 5px;
+        color: #222;
+      }
+      .date,
+      .location {
+        color: #222;
+        font-size: 14px;
+      }
+    }
+  }
+  .cardProfile {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    .title {
+      color: #777;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .profileName {
+      margin-bottom: 20px;
+      .containerImage {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+      }
+      .detailName {
+        .name {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        .status {
+          font-size: 14px;
+        }
+      }
+    }
+    .keyProfile {
+      font-size: 16px;
+    }
+    .valueProfile {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+  .cardComment {
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .title {
+      color: #777;
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+    .cardComentar {
+      border-bottom: 0.8px solid #eee;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      .profileName {
+        margin-bottom: 20px;
+        .containerImage {
+          width: 60px;
+          height: 60px;
+          margin-right: 10px;
+        }
+        .detailName {
+          .name {
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .status {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.drawerContainer {
+  width: $widthDrawer;
+  display: flex;
+  padding: 30px 10px 20px;
+  align-items: center;
+  height: 100%;
+  align-content: flex-start;
+  .logoContainer {
+    width: 65px;
+    height: 65x;
+    margin-bottom: 30px;
+    .logoStyle {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .userAvatar {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .userName {
+    font-weight: bold;
+  }
+  .userRole {
+    font-size: 13px;
+  }
+}
